@@ -213,16 +213,16 @@
 #define TEXT_PREF
 #include "../include/com0com.h"
 
-#define C0C_INF_NAME             "com0com.inf"
-#define C0C_INF_NAME_CNCPORT     "cncport.inf"
-#define C0C_INF_NAME_COMPORT     "comport.inf"
-#define C0C_CNCCLASS_GUID        "{df799e12-3c56-421b-b298-b6d3642bc878}"
+#define C0C_INF_NAME             "cslcom0com.inf"
+#define C0C_INF_NAME_CNCPORT     "cslcncport.inf"
+#define C0C_INF_NAME_COMPORT     "cslcomport.inf"
+#define C0C_CNCCLASS_GUID        "{aefafa13-5877-43dc-b2b6-cd04b36e4413}"
 #define C0C_COMCLASS_GUID        "{4d36e978-e325-11ce-bfc1-08002be10318}"
-#define C0C_PROVIDER             "Vyacheslav Frolov"
+#define C0C_PROVIDER             "CSL Group"
 #define C0C_REGKEY_EVENTLOG      REGSTR_PATH_SERVICES "\\Eventlog\\System\\" C0C_SERVICE
-#define C0C_COPY_DRIVERS_SECTION "com0com_CopyDrivers"
+#define C0C_COPY_DRIVERS_SECTION "cslcom0com_CopyDrivers"
 
-#define C0C_SETUP_TITLE          "Setup for com0com"
+#define C0C_SETUP_TITLE          "Setup for CSL com0com"
 ///////////////////////////////////////////////////////////////
 static const InfFile::InfFileField requiredFieldsInfBusInstall[] = {
   { "Version",         "ClassGUID",          1, C0C_CNCCLASS_GUID },
@@ -272,7 +272,7 @@ static const InfFile::InfFileField requiredFieldsInfUnnstallInfTag[] = {
 static const InfFile::InfFileField requiredFieldsInfUnnstallCNCOld[] = {
   { "Version",         "ClassGUID",          1, C0C_CNCCLASS_GUID },
   { "Version",         "Provider",           1, C0C_PROVIDER },
-  { "Version",         "CatalogFile",        1, "com0com.cat" },
+  { "Version",         "CatalogFile",        1, "cslcom0com.cat" },
   { NULL },
 };
 
@@ -566,7 +566,7 @@ static VOID SetFriendlyNamePort(
                                           (LPBYTE)deviceDesc, sizeof(deviceDesc), NULL))
     {
       SNPRINTF(deviceDesc, sizeof(deviceDesc)/sizeof(deviceDesc[0]),
-               "com0com - serial port emulator");
+               "CSL com0com - serial port emulator");
     }
 
     char friendlyName[120];

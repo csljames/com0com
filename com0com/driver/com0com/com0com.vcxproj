@@ -25,8 +25,9 @@
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <Configuration>Win8.1 Debug</Configuration>
     <Platform Condition="'$(Platform)' == ''">Win32</Platform>
-    <RootNamespace>com0com</RootNamespace>
+    <RootNamespace>cslcom0com</RootNamespace>
     <WindowsTargetPlatformVersion>$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+    <ProjectName>cslcom0com</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -120,7 +121,8 @@
       <Command>mc.exe c0clog.mc</Command>
     </PreBuildEvent>
     <Inf>
-      <TimeStamp>3.0.0.0</TimeStamp>
+      <TimeStamp>3.0.0.1</TimeStamp>
+      <ProviderName>CSL Group</ProviderName>
     </Inf>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -140,7 +142,7 @@
       <WppKernelMode>true</WppKernelMode>
     </ClCompile>
     <Inf>
-      <TimeStamp>3.0.0.0</TimeStamp>
+      <TimeStamp>*</TimeStamp>
     </Inf>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -194,13 +196,13 @@
     <ClInclude Include="version.h" />
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="cncport.inf">
+    <Inf Include="cslcncport.inf">
       <FileType>Document</FileType>
     </Inf>
-    <Inf Include="com0com.inf">
+    <Inf Include="cslcom0com.inf">
       <FileType>Document</FileType>
     </Inf>
-    <Inf Include="comport.inf">
+    <Inf Include="cslcomport.inf">
       <FileType>Document</FileType>
     </Inf>
   </ItemGroup>

@@ -27,7 +27,7 @@
 #define C0C_V1 3
 #define C0C_V2 0
 #define C0C_V3 0
-#define C0C_V4 0
+#define C0C_V4 2
 
 #define MK_VERSION_STR1(V1, V2, V3, V4) #V1 "." #V2 "." #V3 "." #V4
 #define MK_VERSION_STR(V1, V2, V3, V4) MK_VERSION_STR1(V1, V2, V3, V4)

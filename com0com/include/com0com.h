@@ -22,17 +22,17 @@
 #ifndef _INCLUDE_C0C_COM0COM_H_
 #define _INCLUDE_C0C_COM0COM_H_
 
-#define C0C_BUS_DEVICE_ID           TEXT_PREF"root\\com0com"
-#define C0C_PORT_DEVICE_ID          TEXT_PREF"com0com\\port"
-#define C0C_PORT_HW_ID_CNCCLASS     TEXT_PREF"com0com\\cncport"
-#define C0C_PORT_HW_ID_COMCLASS     TEXT_PREF"com0com\\comport"
-#define C0C_SERVICE                 TEXT_PREF"com0com"
+#define C0C_BUS_DEVICE_ID           TEXT_PREF"root\\cslcom0com"
+#define C0C_PORT_DEVICE_ID          TEXT_PREF"cslcom0com\\cslport"
+#define C0C_PORT_HW_ID_CNCCLASS     TEXT_PREF"cslcom0com\\cslcncport"
+#define C0C_PORT_HW_ID_COMCLASS     TEXT_PREF"cslcom0com\\cslcomport"
+#define C0C_SERVICE                 TEXT_PREF"cslcom0com"
 #define C0C_PREF_NT_DEVICE_NAME     TEXT_PREF"\\Device\\"
 
 #define C0C_PORT_NAME_LEN           12
-#define C0C_PREF_BUS_NAME           TEXT_PREF"CNCBUS"
-#define C0C_PREF_PORT_NAME_A        TEXT_PREF"CNCA"
-#define C0C_PREF_PORT_NAME_B        TEXT_PREF"CNCB"
+#define C0C_PREF_BUS_NAME           TEXT_PREF"CSLCNCBUS"
+#define C0C_PREF_PORT_NAME_A        TEXT_PREF"CNCJ"
+#define C0C_PREF_PORT_NAME_B        TEXT_PREF"CNCK"
 #define C0C_PREF_DEVICE_NAME_A      C0C_PREF_NT_DEVICE_NAME C0C_SERVICE TEXT_PREF"1"
 #define C0C_PREF_DEVICE_NAME_B      C0C_PREF_NT_DEVICE_NAME C0C_SERVICE TEXT_PREF"2"
 #define C0C_PORT_NAME_COMCLASS      TEXT_PREF"COM#"

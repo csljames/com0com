@@ -154,13 +154,13 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Inf Include="cncport.inf">
+    <Inf Include="cslcncport.inf">
       <Filter>Driver Files</Filter>
     </Inf>
-    <Inf Include="com0com.inf">
+    <Inf Include="cslcom0com.inf">
       <Filter>Driver Files</Filter>
     </Inf>
-    <Inf Include="comport.inf">
+    <Inf Include="cslcomport.inf">
       <Filter>Driver Files</Filter>
     </Inf>
   </ItemGroup>
